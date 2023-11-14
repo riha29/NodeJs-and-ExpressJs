@@ -1,57 +1,26 @@
-// const http= require('http')
-// const port= 3000
+// const amount = 12;
 
-// const server =http.createServer( (req, res)=> {
-//     res.write('hello node')
-//     res.end()
-// })
+// if (amount < 10) {
+//   console.log("small number");
+// } else {
+//   console.log("large number");
+// }
 
-// server.listen(port, (error) => {
-//     if (error){
-//         console.log('something went wrong', error)
-//     }
-//     else{
-//         console.log('server is listening on port '+ port)
-//     }
-// })
+// console.log(`hey it's my first node app!!!`);
 
-const express = require("express");
-const app = express();
-const port = 3000;
+// const secret = "SUPER SECRET";
+// const john = "john";
+// const peter = "peter";
+// const sayHi = (name) => {
+//   console.log(`Hello there ${name}`);
+// };
 
-app.get("/", (req, res) => {
-  parameter = req.params.parameter;
-  res.send("Hello World! Listen to my motive: ${parameter}");
-});
-
-module.exports = app;
-// app.post("/", (req, res) => {
-//   res.send("Got a POST request");
-// });
-
-// app.put("/user", function (req, res) {
-//   res.send("Got a PUT request at /user");
-// });
-
-// app.delete("/user", function (req, res) {
-//   res.send("Got a DELETE request at /user");
-// });
-
-// String path
-app.get("/about", function (req, res) {
-  res.send("About Page");
-});
-
-// // String pattern
-// app.get("/ab?cd", function (req, res) {
-//   res.send("ab?cd");
-// });
-
-// // Regular expression
-// app.get(/.*fly$/, function (req, res) {
-//   res.send("/.*fly$/");
-// });
-
-app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`);
-});
+const names = require("./4-names");
+const sayHi = require("./5-utils");
+const data = require("./6-alternative-flavor");
+require("./7-mind-grenade");
+// sayHi("susan");
+// // sayHi(john);
+// // sayHi(peter);
+// sayHi(names.john);
+// sayHi(names.peter);
