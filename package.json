@@ -1,18 +1,18 @@
 {
-  "name": "version",
+  "name": "tutorial",
   "version": "1.0.0",
+  "description": "",
   "main": "1-intro.js",
   "scripts": {
     "start": "nodemon app.js"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "keywords": [],
-  "description": "",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.20"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^2.0.7"
   }
 }
